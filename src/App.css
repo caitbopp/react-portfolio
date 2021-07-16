@@ -1,38 +1,152 @@
-.App {
+/*Body and Header*/
+body {
+  background-color: #D9CAB3;
+  font-family: "Baskerville", "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #BC8034;
+  color: #D9CAB3;
+  margin: 0;
+}
+
+.navbar-brand {
+  color: #D9CAB3;
+  font-size: 92px;
+}
+
+.nav-item {
+  margin-top: 5%;
+  float: right;
+  font-family: "Baskerville", "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
+  font-size: 20px;
+}
+
+
+#headshot {
+  height: 200px;
+  padding-bottom: 3px;
+  float: left;
+  border-radius: 50%;
+}
+
+a {
+  color: #90323D;
+  text-decoration: none;
+}
+
+
+h2, h3, h4, h5, h6 {
+  font-family: "Baskerville", "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
+  color: #5E0B15;
+}
+
+
+h2 {
+  font-size: 200%;
+}
+
+/*end Body and Header*/
+
+/*Main*/
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  margin-right: 50px;
+}
+
+.container {
+  margin: 2% 30px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.heading {
+  flex: 0 0 20%;
+  justify-content: space-between;
+  padding-right: 3%;
+  align-items: flex-start;
+  border-width: 0 2px 0 0;
+  border-color: #8C7A6B;
+  border-style: solid;
+  text-align: right;
+}
+
+p {
+  margin-left: 30px;
+  margin-top: 5px;
+  font-size: 18px;
+}
+
+/* Work History*/
+
+.card {
+  margin: 10px;
+  border: 5px #BC8034 solid;
+}
+
+.card-body {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.row {
+  margin-left: 3px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card:hover {
+  box-shadow: inset 0px 0px 8px #BC8034, 0 0 15px #BC8034;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.image-container img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.overlay {
+  text-align: center;
+}
+
+/* End Work History*/
+
+/* Contact Me */
+.contact-information {
+  margin-left: 30px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.contact-information nav {
+  border-width: 0 2px 0 0;
+  border-color: #5E0B15;
+  padding-top: 45px;
+  margin-right: 20px;
+  float: right;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contact-information nav ul {
+  list-style: none;
+  margin: 0 2px;
+  padding: 0;
 }
+
+.contact-information nav ul li {
+  display: inline-block;
+  margin-left: 80px;
+}
+.contact-information a {
+  border-bottom: 2px solid #903;
+  padding-bottom: 2px;
+}
+/* End Contact Me*/
