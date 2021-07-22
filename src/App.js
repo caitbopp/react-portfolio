@@ -1,6 +1,10 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/NavBar';
+import AboutMe from './components/AboutMe';
+import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 import { HashRouter as Router, Route } from 'react-router-dom';
 
 function App() {
@@ -8,10 +12,11 @@ function App() {
     <Router>
     <div className="App">
       <NavBar />
-      <Route>
+      <Route><AboutMe /></Route>
+      <Route><Portfolio /></Route>
+      <Route><Contact /></Route>
 
-      </Route>
-      // add footer here
+      {/* <Footer /> */}
     </div>
     </Router>
   );
