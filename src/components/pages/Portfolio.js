@@ -29,7 +29,7 @@ export default function Projects() {
               </div>
 
         ))}
-                  </section>;
+                  </section>
 
       </div>
     // </section>
