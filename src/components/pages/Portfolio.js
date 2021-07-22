@@ -13,8 +13,9 @@ export default function Projects() {
             Apps I've Built
           </h1>
         </div>
+        <section className="row">
         {projects.map((project) => (
-          <section className="row">
+
             <div className="col-lg-6 col-sm-12 mb-3">
               <div className="card">
                 <a className="image-container" href={project.deployedLink} target="blank">
@@ -26,8 +27,9 @@ export default function Projects() {
                   </div>
               </div>
               </div>
-          </section>
-        ))};
+
+        ))}
+                  </section>;
 
       </div>
     // </section>
