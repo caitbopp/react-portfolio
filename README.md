@@ -16,7 +16,7 @@ npm start
 ```
 
 ## Usage
-A linked to my deployed portfolio can be found here: [Heroku](https://still-thicket-10545.herokuapp.com/).
+A linked to my deployed portfolio can be found here: [React Portfolio](https://caitbopp.github.io/react-portfolio/).
 
 <img src="./src/assets/portfolio.png">
 
