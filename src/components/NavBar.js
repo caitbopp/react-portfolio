@@ -5,7 +5,7 @@ function NavBar({ currentPage, handlePageChange }) {
     return (<header>
         <nav className="navbar navbar-expand-lg">
             <div className="container-fluid">
-                <img id="headshot" src={headshot} />
+                {/* <img id="headshot" src={headshot} /> */}
                 <h1 className="navbar-brand">Caitlin Bopp</h1>
                 <div className="collapse navbar-collapse  d-flex flex-sm-row flex-lg-row-reverse" id="navbarNav">
                     <ul className="nav nav-tabs">

@@ -3,9 +3,10 @@ import { projects } from '../../data';
 
 
 
+
 export default function Projects() {
   return (
-      <div className="container px-5 py-10 mx-auto text-center lg:px-40">
+      <div className="container px-5 py-10 mx-auto text-center lg:px-40 pb-5">
           <h1>
             Portfolio
           </h1>
