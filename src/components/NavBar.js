@@ -1,11 +1,10 @@
 import React from 'react';
-import headshot from '../assets/headshot.jpg';
+import resume from '../assets/resume.pdf';
 
 function NavBar({ currentPage, handlePageChange }) {
     return (<header>
         <nav className="navbar navbar-expand-lg">
             <div className="container-fluid">
-                {/* <img id="headshot" src={headshot} /> */}
                 <h1 className="navbar-brand">Caitlin Bopp</h1>
                 <div className="collapse navbar-collapse  d-flex flex-sm-row flex-lg-row-reverse" id="navbarNav">
                     <ul className="nav nav-tabs">
@@ -15,13 +14,18 @@ function NavBar({ currentPage, handlePageChange }) {
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a href="#portfolio" onClick={() => handlePageChange('Portfolio')} className={currentPage === 'Potfolio' ? 'nav-link active' : 'nav-link'}>
+                            <a href="#portfolio" onClick={() => handlePageChange('Portfolio')} className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}>
                                 Portfolio
                             </a>
                         </li>
                         <li className="nav-item">
                             <a href="#contact" onClick={() => handlePageChange('Contact')} className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}>
                                 Contact
+                            </a>
+                        </li>
+                        <li className="nav-item">
+                            <a href={resume} className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}>
+                                Resume
                             </a>
                         </li>
                     </ul>
